@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="styles/style.css">
+
+</head>
+
+<body>
+    <section class="section">
+        <button id="add_button">Add contact</button>
+        <div class="section__contacts_list">
+            <ul id="contacts_list"></ul>
+        </div>
+    </section>
+
+    <div class="popup">
+        <div class="popup__main">
+            <h2 class="popup__title">Contact</h2>
+            <div class="popup__container">
+                <div class="popup__container__element">
+                    <label for="contact_name_input">Name: </label>
+                    <input id="contact_name_input" />
+                    <small></small>
+                </div>
+                <div class="popup__container__element">
+                    <label for="contact_phone_number_input">Phone number: </label>
+                    <input id="contact_phone_number_input" />
+                    <small></small>
+                </div>
+                <div class="popup__container__element">
+                    <label for="contact_job_title_input">Job title: </label>
+                    <input id="contact_job_title_input" />
+                    <small></small>
+                </div>
+                <div class="popup__container__element">
+                    <label for="contact_birth_date_input">Birth date: </label>
+                    <input id="contact_birth_date_input" />
+                    <small></small>
+                </div>
+                <div class="popup__buttons_block"></div>
+            </div>
+
+            <button class="popup__close">&#10006;</button>
+        </div>
+    </div>
+
+    <script src="scripts/server_interaction.js"></script>
+    <script src="scripts/validation.js"></script>
+    <script src="scripts/popup.js"></script>
+    <script src="scripts/app.js"></script>
+</body>
+
+</html>
